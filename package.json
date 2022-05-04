@@ -4,16 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info --verbose",
     "build": "tsc"
+  },
+  "engines": {
+    "node": ">=14.15.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.5.0",
+    "coveralls": "^3.1.1",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.4",
     "typescript": "^4.6.4"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }
