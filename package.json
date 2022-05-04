@@ -8,6 +8,9 @@
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info --verbose",
     "build": "tsc"
   },
+  "engines": {
+    "node": ">=14.15.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
