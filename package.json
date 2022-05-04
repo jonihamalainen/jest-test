@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info --verbose",
     "build": "tsc"
   },
   "keywords": [],
